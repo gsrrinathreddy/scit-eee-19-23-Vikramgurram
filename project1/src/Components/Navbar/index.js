@@ -13,8 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {Link} from 'react-router-dom';
-
-const pages = ['AboutUs','Experience','Skills','Qualifications'];
+import vvvvv from '../../Assests/vvvvv.jpg'
+const pages = ['AboutUs','Experience','Skills','Qualifications','Hobbies'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Navbar() {
@@ -52,11 +52,11 @@ function Navbar() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'red',
               textDecoration: 'none',
             }}
           >
-            LOGO
+            PORTFOLIO
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -112,7 +112,7 @@ function Navbar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            PORTFOLIO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -120,7 +120,7 @@ function Navbar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: 'Black', display: 'block' }}
               >
                 {page}
               </Button>
@@ -131,7 +131,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Vikram" src={vvvvv}/>
               </IconButton>
             </Tooltip>
             <Menu
